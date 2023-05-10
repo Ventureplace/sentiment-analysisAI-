@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bullish or Bearish Extension</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Stock Sentiment Analysis</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Bullish or Bearish Extension</h1>
-      <div class="form">
-        <button id="analyze-btn">Analyze Page</button>
-        <div class="output">
-          <div class="sentiment"></div>
-          <div class="explanation"></div>
-        </div>
-      </div>
+    <h1>Stock Sentiment Analysis</h1>
+    <div>
+      <button id="analyze-btn">Analyze Page</button>
+      <div id="loading-spinner"></div>
+    </div>
+    <div id="result-container">
+      <h2>Result:</h2>
+      <div id="sentiment"></div>
+      <div id="explanation"></div>
     </div>
     <script src="popup.js"></script>
   </body>
 </html>
+
